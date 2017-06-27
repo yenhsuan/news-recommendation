@@ -1,0 +1,21 @@
+
+.SearchPage {
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  width: 20%;
+}
+
+.in-box {
+	padding-left:  15%;
+	padding-right:  15%;
+}
+
+.searchBtn {
+	
+}

@@ -1,0 +1,34 @@
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card-image {
+    height: 200px;
+}
+
+.img200 {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.title {
+    font-size: 14px;
+}
+
+.labels {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size:10px;
+    display: inline;
+    border-radius: 3px;
+}
