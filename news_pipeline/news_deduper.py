@@ -64,6 +64,7 @@ def handle_message(msg):
                 return
 
     task['publishedAt'] = parser.parse(task['publishedAt'])
+    task['createdAt'] = datetime.datetime.utcnow()
 
     # Classify news
     title = task['title']
