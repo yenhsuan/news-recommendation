@@ -12,3 +12,9 @@
 # misc
 .DS_Store
 
+# Mac local files
+*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
