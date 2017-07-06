@@ -1,4 +1,0 @@
-{
-	"mongoDbUri": "***REMOVED***",
-	"jwtSecret": "Random String"
-}
