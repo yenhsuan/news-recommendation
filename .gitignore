@@ -20,3 +20,7 @@
 .env.production.local
 
 *.Ubuntu-LTS
+
+# Training Set
+2pageSessions.csv
+newsCorpora.csv
