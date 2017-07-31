@@ -1,0 +1,59 @@
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: black;
+}
+
+.card-image {
+    height: 200px;
+}
+
+.img200 {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.title {
+    font-size: 14px;
+}
+
+.title:hover {
+    cursor: pointer;
+}
+
+
+.labels {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size:10px;
+    display: inline;
+    border-radius: 3px;
+    color:white;
+    margin-right:5px;
+}
+
+.source {
+    background-color: #636363;
+}
+
+.news-class-banner {
+    margin-top: 5px;
+    margin-left:-24px;
+    margin-right:-24px;
+    margin-bottom:-16px;
+    text-align: center;
+    color: white;
+}
+
+
+
+

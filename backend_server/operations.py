@@ -20,7 +20,7 @@ from cloudAMQP_client import CloudAMQPClient
 REDIS_HOST = "localhost"
 REDIS_PORT = 6379
 
-NEWS_TABLE_NAME = "news"
+NEWS_TABLE_NAME = "news-classified"
 CLICK_LOGS_TABLE_NAME = 'clicks'
 
 NEWS_LIMIT = 300

@@ -20,7 +20,7 @@ class DemoPanel extends React.Component {
       return;
     }
 
-    let url = 'http://localhost:3000/newsdemo';
+    let url = '/newsdemo';
 
     let request = new Request(encodeURI(url), {
       method: 'GET',
@@ -81,7 +81,7 @@ class DemoPanel extends React.Component {
       return (
         <div>
               <div className="row">
-              <div className="progress col s12 m6 l4 offset-m3 offset-l4">
+              <div className="progress col s12 m6 l4 offset-m3 offset-l4 mid">
                 <div className="indeterminate"></div>
               </div>
               </div>

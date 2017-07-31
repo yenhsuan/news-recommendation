@@ -8,7 +8,7 @@ import _ from 'lodash';
 class SearchPanel extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {news:null, pageNum:1, loadedAll:false};
+    this.state = {news:null, pageNum:1, loadedAll:false, loading:false};
     this.handleScroll = this.handleScroll.bind(this);
   }
 
@@ -26,20 +26,22 @@ class SearchPanel extends React.Component {
   handleScroll() {
     let scrollY = window.scrollY || window.pageYOffset
         || document.documentElement.scrollTop;
-    if ((window.innerHeight + scrollY) >= (document.body.offsetHeight - 50)) {
+    if ((window.innerHeight + scrollY) >= (document.body.offsetHeight - 50) && !this.state.loading) {
       console.log('Loading more news...');
       this.loadMoreNews();
     }
   }
 
   loadMoreNews() {
+    this.setState({loading:true});
     if (this.state.loadedAll === true) {
       console.log('no more news!');
+      this.setState({loading:false});
       return;
     }
 
     console.log('Search: '+this.props.keyword);
-    fetch('http://localhost:3000/news/search', {
+    fetch('/news/search', {
       method: 'POST',
       cache: 'no-cache',
       headers: {
@@ -63,7 +65,8 @@ class SearchPanel extends React.Component {
         console.log(news);
         this.setState({
           news: this.state.news ? this.state.news.concat(news) : news,
-          pageNum: this.state.pageNum + 1
+          pageNum: this.state.pageNum + 1,
+          loading: false
         });
       });
   }

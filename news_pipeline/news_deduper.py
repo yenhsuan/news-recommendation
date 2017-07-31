@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import datetime
 import os
 import sys
@@ -21,7 +22,7 @@ SLEEP_TIME_IN_SECONDS = 1
 
 SAME_NEWS_SIMILARITY_THRESHOLD = 0.9
 
-NEWS_TABLE_NAME = "news"
+NEWS_TABLE_NAME = "news-classified"
 
 cloudAMQP_client = CloudAMQPClient(DEDUPE_NEWS_TASK_QUEUE_URL, DEDUPE_NEWS_TASK_QUEUE_NAME)
 
@@ -67,7 +68,7 @@ def handle_message(msg):
     task['createdAt'] = datetime.datetime.utcnow()
 
     # Classify news
-    title = task['title']
+    title = task['title'].encode('ascii', 'ignore')
     if title is not None:
         topic = news_topic_modeling_service_client.classify(title)
         task['class'] = topic

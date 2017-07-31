@@ -23,3 +23,17 @@ export const chipsName = {
     'the-wall-street-journal':'Wall Street Journal',
     'the-washington-post':'Washington Post'
 };
+
+export const classTitle = {
+    "Entertainment": 'ENTERTAINMENT',
+    "Techonology": 'TECHONOLOGY',
+    "Health": 'HEALTH',
+    "Business": 'WORLD & ECONOMIC'
+}
+
+export const classColor = {
+    'Entertainment': '#fbbc05',
+    'Techonology': '#4285f4',
+    'Health': '#34a853',
+    'Business': '#ea4335'
+}

@@ -27,7 +27,7 @@ import mongodb_client
 from cloudAMQP_client import CloudAMQPClient
 
 # Don't modify this value unless you know what you are doing.
-NUM_OF_CLASSES = 17
+NUM_OF_CLASSES = 4
 INITIAL_P = 1.0 / NUM_OF_CLASSES
 ALPHA = 0.1
 
@@ -39,7 +39,7 @@ LOG_CLICKS_TASK_QUEUE_NAME = "click-log"
 
 
 PREFERENCE_MODEL_TABLE_NAME = "user_preference_model"
-NEWS_TABLE_NAME = "news"
+NEWS_TABLE_NAME = "news-classified"
 
 cloudAMQP_client = CloudAMQPClient(LOG_CLICKS_TASK_QUEUE_URL, LOG_CLICKS_TASK_QUEUE_NAME)
 

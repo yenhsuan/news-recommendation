@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    background-color: black;
 }
 
 .card-image {
@@ -23,6 +24,11 @@
     font-size: 14px;
 }
 
+.title:hover {
+    cursor: pointer;
+}
+
+
 .labels {
     padding-left: 10px;
     padding-right: 10px;
@@ -31,4 +37,23 @@
     font-size:10px;
     display: inline;
     border-radius: 3px;
+    color:white;
+    margin-right:5px;
 }
+
+.source {
+    background-color: #636363;
+}
+
+.news-class-banner {
+    margin-top: 5px;
+    margin-left:-24px;
+    margin-right:-24px;
+    margin-bottom:-16px;
+    text-align: center;
+    color: white;
+}
+
+
+
+

@@ -22,7 +22,7 @@ class NewsPanel extends React.Component {
   handleScroll() {
     let scrollY = window.scrollY || window.pageYOffset
         || document.documentElement.scrollTop;
-    if ((window.innerHeight + scrollY) >= (document.body.offsetHeight - 50)) {
+    if ((window.innerHeight + scrollY) >= (document.body.offsetHeight - 50) && !this.state.loading) {
       console.log('Loading more news...');
       this.loadMoreNews();
     }
@@ -38,7 +38,7 @@ class NewsPanel extends React.Component {
 
 
 
-    let url = 'http://localhost:3000/news/userId/' + Auth.getEmail()
+    let url = '/news/userId/' + Auth.getEmail()
               + '/pageNum/' + this.state.pageNum;
 
     let request = new Request(encodeURI(url), {
@@ -106,7 +106,7 @@ class NewsPanel extends React.Component {
       return (
         <div>
               <div className="row">
-              <div className="progress col s12 m6 l4 offset-m3 offset-l4">
+              <div className="progress col s12 m6 l4 offset-m3 offset-l4 mid">
                 <div className="indeterminate"></div>
               </div>
               </div>

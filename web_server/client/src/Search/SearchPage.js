@@ -37,7 +37,7 @@ class SearchPage extends Component {
 
                 <div className="waves-effect waves-light btn searchBtn right" 
                   onClick={(event)=>{
-                      this.setState({userInput:'and'});
+                      this.setState({userInput:this.state.userInput});
                   }}
                 >
                     <i className="fa fa-search"></i> Search
