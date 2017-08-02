@@ -12,6 +12,18 @@ const LoginForm = ({onSubmit,onChange,errors}) => (
         <form className="col s12" action="/" onSubmit={onSubmit}>
           <h4 className="center-align">Login</h4>
           {errors.summary && <div className="row"><p className="error-message">{errors.summary}</p></div>}
+          
+          <div className="row">
+            <div className="demo-info"><font color='green'><b>Demo Account:</b></font>
+            <br />
+            <i className="fa fa-user-circle-o" aria-hidden="true"> </i> demo@demo.com <br />
+            <i className="fa fa-key" aria-hidden="true"> </i> demodemo
+            </div>
+            
+          </div>
+
+
+
           <div className="row">
             <div className="input-field col s12">
               <input className="validate" id="email" type="email" name="email" onChange={onChange}/>
@@ -29,6 +41,8 @@ const LoginForm = ({onSubmit,onChange,errors}) => (
           <div className="row right-align">
             <input type="submit" className="waves-effect waves-light btn indigo lighten-1" value='Log in'/>
           </div>
+
+
           <div className="row">
             <p className="right-align"> New to TopNews?  <Link to="/signup">Sign Up</Link></p>
           </div>
