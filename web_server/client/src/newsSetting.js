@@ -28,7 +28,7 @@ export const classTitle = {
     "Entertainment": 'ENTERTAINMENT',
     "Techonology": 'TECHONOLOGY',
     "Health": 'HEALTH',
-    "Business": 'WORLD & ECONOMIC'
+    "Business": 'WORLD & BUSINESS'
 }
 
 export const classColor = {

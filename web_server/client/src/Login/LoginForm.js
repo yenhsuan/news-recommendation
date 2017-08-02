@@ -7,7 +7,7 @@ const LoginForm = ({onSubmit,onChange,errors}) => (
       <div className="row">
         <br />
         <br />
-      <div className='card-panel login-panel col s10 m4 offset-s1 offset-m4'>
+      <div className='card-panel login-panel col s10 m6 l4 offset-s1 offset-m3 offset-l4'>
         <br />
         <form className="col s12" action="/" onSubmit={onSubmit}>
           <h4 className="center-align">Login</h4>
@@ -30,7 +30,7 @@ const LoginForm = ({onSubmit,onChange,errors}) => (
             <input type="submit" className="waves-effect waves-light btn indigo lighten-1" value='Log in'/>
           </div>
           <div className="row">
-            <p className="right-align"> New to Tap News?  <Link to="/signup">Sign Up</Link></p>
+            <p className="right-align"> New to TopNews?  <Link to="/signup">Sign Up</Link></p>
           </div>
         </form>
       </div>

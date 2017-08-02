@@ -4,6 +4,7 @@ import App from '../App/App';
 import { browserHistory, Link } from 'react-router';
 import Auth from '../Auth/Auth';
 import SearchPage from '../Search/SearchPage';
+import Logo from './Logo.png'
 
 
 
@@ -27,7 +28,7 @@ class Base extends React.Component {
     <div>
   <nav className="nav">
    <div className="nav-wrapper">
-      <a href="/" className="brand-logo"><i className="material-icons logo-title">loyalty</i>TopNews</a>
+      <a href="/" className="brand-logo"><img className="logo" src={Logo} /></a>
       <a href="#" data-activates="mobile-demo" className="button-collapse"><i className="material-icons">menu</i></a>
 
 
@@ -50,7 +51,6 @@ class Base extends React.Component {
       <ul className="side-nav" id="mobile-demo">
         {Auth.isUserAuthenticated() ?
              (<li>
-                <li>{Auth.getEmail()}</li>
                 <li><Link to='/search'>Search News</Link></li>
                 <li><Link to="/logout">Log out</Link></li>
               </li>)

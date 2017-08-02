@@ -12,6 +12,7 @@ nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
 nav .button-collapse i {
     height: 40px;
     line-height: 40px;
+    color: black;
 }
 
 nav .brand-logo { 
@@ -24,6 +25,12 @@ nav ul a {
 
 nav .brand-logo {
     color: black !important;
+}
+
+.logo {
+    height:30px;
+    margin-top: 8px;
+    margin-left:10px;
 }
 
 @media only screen and (min-width: 601px){

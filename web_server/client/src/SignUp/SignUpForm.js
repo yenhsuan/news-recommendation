@@ -11,7 +11,7 @@ const SignUpForm = ({
     <div className="row">
     <br />
     <br />
-    <div className="card-panel signup-panel col s10 m4 offset-s1 offset-m4">
+    <div className="card-panel signup-panel col s10 m6 l4 offset-s1 offset-m3 offset-l4">
       <br />
       <form className="col s12" action="/" onSubmit={onSubmit}>
         <h4 className="center-align">Sign Up</h4>

@@ -6,10 +6,6 @@
 	margin-top: 50px;
 }
 
-.mid {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+.bar-div {
+    margin-top: 30vh;
 }

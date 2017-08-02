@@ -22,7 +22,7 @@ class LoginPage extends React.Component {
 	}
 
 	componentWillMount() {
-        document.body.style.backgroundColor = 'rgba(0,0,0,0.8)';
+        document.body.style.backgroundColor = 'rgba(0,0,0,0.5)';
 	}
 	componentWillUnmount() {
         document.body.style.backgroundColor = null;

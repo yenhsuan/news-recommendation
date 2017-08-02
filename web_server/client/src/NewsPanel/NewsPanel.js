@@ -106,8 +106,11 @@ class NewsPanel extends React.Component {
       return (
         <div>
               <div className="row">
-              <div className="progress col s12 m6 l4 offset-m3 offset-l4 mid">
+              <div className="bar-div">
+              <div className="progress col s12 m6 l4 offset-m3 offset-l4">
+                
                 <div className="indeterminate"></div>
+              </div>
               </div>
               </div>
         </div>
